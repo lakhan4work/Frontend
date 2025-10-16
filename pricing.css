@@ -1,0 +1,90 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header styling */
+header h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Flex container for pricing plans */
+.pricing-container {
+    display: flex; /* use flexbox */
+    justify-content: center;
+    gap: 20px; /* spacing between plans */
+    flex-wrap: wrap; /* responsive wrapping */
+}
+
+/* Individual plan box */
+.plan {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    flex: 1; /* equal width */
+    min-width: 250px; /* ensure responsiveness */
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s; /* smooth hover */
+    height: 100%; /* equal height with flex container */
+}
+
+/* Hover effect */
+.plan:hover {
+    transform: scale(1.05); /* slightly enlarge */
+    background-color: #e0f7fa; /* light background change */
+}
+
+/* Highlight most popular plan */
+.plan.popular {
+    border: 3px solid #3498db; /* different border color */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Plan heading */
+.plan h2 {
+    margin-bottom: 15px;
+}
+
+/* Feature list */
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.plan ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+/* Price section */
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn {
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
